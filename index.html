@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake Riegler - Computer Engineer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3d5a80;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        header:hover {
+            transform: scale(1.05);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            animation: fadeIn 2s ease-out;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-out 0.5s;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+            position: relative;
+            transition: left 1s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6em;
+            color: #555;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        /* Trailing cursor styles */
+        #trailing-cursor {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #ff6b6b;
+            border-radius: 50%;
+            pointer-events: none;
+            transition: transform 0.2s ease-out;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .page-transition {
+            opacity: 1;
+            left: 0;
+        }
+
+        .page-transition-exit {
+            opacity: 0;
+            left: -100%;
+        }
+
+.timeline-section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            border-left: 2px solid #3d5a80;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 10px 20px;
+            margin: 10px 0;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -8px;
+            top: 10px;
+            width: 16px;
+            height: 16px;
+            background-color: #3d5a80;
+            border-radius: 50%;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            left: -22px;
+            top: 10px;
+            width: 12px;
+            height: 12px;
+            background-color: #3d5a80;
+            border-radius: 50%;
+        }
+
+        .timeline-content {
+            margin-left: 30px;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.05);
+        }
+
+        .timeline-content h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .timeline-content p {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Jake Riegler</h1>
+        <p>Computer Engineer | Ohio State</p>
+    </header>
+
+    <a href="" class="page-transition">
+        <section class="page-transition">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am Jake Riegler, a passionate electrical and computer engineer currently pursuing my studies at Ohio State University. This website was designed entirely by me to showcase my HTML and CSS skills, as I am currently learning full stack development.</p>
+        </section>
+    </a>
+
+    <section class="page-transition">
+        <h2>Skills</h2>
+        <ul>
+            <li><a href="#" class="page-transition">Programming Languages: C++, Java, Python, Matlab</a></li>
+            <li><a href="#" class="page-transition">Web Development: HTML, CSS, JavaScript</a></li>
+            <li><a href="#" class="page-transition">Operating Systems: Windows, Linux</a></li>
+            <li><a href="#" class="page-transition">Design Software: AutoCAD, Revit, Solidworks, Bluebeam</a></li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <section class="page-transition">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3><a href="#" class="page-transition">Portfolio Website</a></h3>
+                <p class="work-details">
+                    Built this personal portfolio using HTML, CSS, and JavaScript to showcase my skills in web development.
+                </p>
+            </li>
+            <li>
+                <h3><a href="#" class="page-transition">Motion Detecting Lights</a></h3>
+                <p class="work-details">
+                    Developed automated bathroom lights using IR sensors connected to an Arduino.
+                </p>
+            </li>
+            <li>
+                <h3><a href="#" class="page-transition">Arduino Fan</a></h3>
+                <p class="work-details">
+                    Developed a temperature-based speed controlled fan using Arduino.
+                </p>
+            </li>
+            <!-- Add more projects as needed -->
+        </ul>
+    </section>
+
+<section class="timeline-section">
+    <h2>Work Experience</h2>
+    <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>CHA Consulting</h3>
+                <p><strong>Location:</strong> Columbus, OH, USA</p>
+                <p><strong>Duration:</strong> May 2024 - Aug 2024</p>
+                <p>
+                    - Designed electrical drawings in AutoCAD<br>
+                    - Selected wire sizes and components based on load and client needs<br>
+                    - Worked with Allen Bradley, Eaton, Schneider Electric, and ABB<br>
+                    - Assisted with pricing for electrical projects
+                </p>
+            </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>Trionetics Inc.</h3>
+                <p><strong>Location:</strong> Brooklyn Heights, OH, USA</p>
+                <p><strong>Duration:</strong> Jun 2023 - Aug 2023</p>
+                <p>
+                    - Assisted in electrical tests and QC on custom water treatment systems using PLC controls<br>
+                    - Helped wire and configure systems for Intel and TE Connectivity<br>
+                    - Wired and assembled a system for Estee Lauder display
+                </p>
+            </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>WSM Technology Inc.</h3>
+                <p><strong>Location:</strong> Rootstown, OH, USA</p>
+                <p><strong>Duration:</strong> Jun 2020 - Aug 2022</p>
+                <p>
+                    - Responsible for keeping a clean and safe shop floor by maintaining mold machine conditions<br>
+                    - Helped design molds using Solidworks<br>
+                    - Helped assemble molds while operating the machine
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="page-transition">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for collaboration or inquiries.</p>
+        <ul>
+            <li>Email: <a href="jakeriegler36@gmail.com">jakeriegler36@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/jake-riegler-09882a24a" target="_blank">linkedin.com/in/jake-riegler</a></li>
+            <!-- Add more contact details as needed -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Jake Riegler. All Rights Reserved.</p>
+        <p>
+            <a href="https://github.com/moniter36" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/jake-riegler-09882a24a" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+
+    <div id="trailing-cursor"></div>
+
+    <script>
+        // Trailing cursor functionality
+        document.addEventListener('mousemove', (e) => {
+            const trailingCursor = document.getElementById('trailing-cursor');
+            trailingCursor.style.left = (e.pageX - 5) + 'px';
+            trailingCursor.style.top = (e.pageY - 5) + 'px';
+        });
+
+        // Page transition functionality
+        document.addEventListener('click', (e) => {
+            const target = e.target;
+            if (target.tagName === 'A' && target.classList.contains('page-transition')) {
+                e.preventDefault();
+                const sections = document.querySelectorAll('.page-transition');
+                sections.forEach(section => {
+                    section.classList.remove('page-transition');
+                    section.classList.add('page-transition-exit');
+                });
+
+                setTimeout(() => {
+                    const href = target.getAttribute('href');
+                    window.location.href = href;
+                }, 1000); // Adjust the delay based on your transition duration
+            }
+        });
+    </script>
+</body>
+
+</html>
